@@ -43,6 +43,9 @@
                         <a class="nav-link" href="/history">My Operations</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/users">All users</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/update">Update password</a>
                     </li>
                     <li class="nav-item">

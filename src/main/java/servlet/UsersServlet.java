@@ -17,7 +17,6 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(req,resp);
         if (req.getSession().getAttribute("user") != null){
             req.setAttribute("users",userService.getUsersList());
             getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(req,resp);

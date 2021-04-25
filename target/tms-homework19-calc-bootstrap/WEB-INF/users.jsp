@@ -13,10 +13,12 @@
     <title>Users</title>
 </head>
 <body>
-<form action="/users" method="post">
-
-    <button>Show all users</button>
+<jsp:include page="_header.jsp"/>
+<form action="/users" method="get">
+    <c:forEach items="${requestScope.users}" var="user">
+        <div class="alert alert-primary" role="alert">
+            Username:${user.username}; First name:${user.fname}; Last name:${user.lname}
+    </c:forEach>
 </form>
-${requestScope.list}
 </body>
 </html>
